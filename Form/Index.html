@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Club privilège Fragonard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <h1 id="title">Devenir membre du Club</h1>
+    <p id="description" >Je souhaite faire parti du Club Privilège</p>
+    <img src="Images/Logo_Fragonard.png" alt="logo-fragonard">
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    
+      <fieldset>
+        <label for="gender">Civilité
+          <select id="gender" name="gender">
+            <option value="">(Choisissez)</option>
+            <option value="1">M.</option>
+            <option value="2">Mme</option>
+          </select>
+        </label>
+        <label for="first-name">Votre prénom: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Votre nom: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="address-1">Adresse: <input id="address-1" name="address-1" type="text" required /></label>
+        <label for="address-2">Complément d'adresse: <input id="address-2" name="address-2" type="text" required /></label>
+        <label for="zip-code">Code postal: <input id="zip-code" name="zip-code" type="text" required /></label>
+        <label for="country">Pays: <input id="zip-code" name="zip-code" type="text" required /></label>
+        <label for="email">Votre adresse email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Créer un mot de passe: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Abonnement du compte</legend>
+        <label for="standard-account"><input id="standard-account" type="radio" name="account-type" class="inline" checked /> Privilège Standard <p>(Je reçois des "codes cadeaux et avantages" ainsi que des échantillons tous les mois)</p> <h5>Abonnement gratuit</h5></label>
+        <label for="exclusif-account"><input id="exclusif-account" type="radio" name="account-type" class="inline" /> Privilège Exclusif <p>(Je reçois des "codes cadeaux et avantages" ainsi que des échantillons tous les mois, je bénéficie de la livraison express pour toutes commandes au dessus de 100€ et du retour gratuit)</p> <h5>Abonnement annuel 40€</h5> </label>
+      </fieldset>
+      <fieldset>
+        <!-- <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label> -->
+        <label for="birthday">Renseigner votre date d'anniversaire: <input id="birthday" type="date" name="birthday"  required/></label>
+        <label for="referrer">Comment nous avez vous connu?
+          <select id="referrer" name="referrer">
+            <option value="">(Choisissez)</option>
+            <option value="1">Je suis client en boutique</option>
+            <option value="2">J'ai déjà commandé en ligne</option>
+            <option value="3">J'ai reçu un document Fragonard dans un colis</option>
+            <option value="4">Autre</option>
+          </select>
+        </label>
+        <label for="bio">Comment percevez vous Fragonard? 
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Une Maison de parfumerie incontournable..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> J'accepte les  <a href="https://www.freecodecamp.org/news/terms-of-service/">termes et conditions</a>
+      </label>
+      <input type="submit" value="Je m'abonne" />
+    </form>
+  </body>
+</html>

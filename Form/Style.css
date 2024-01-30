@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+    body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(90deg, #b1890f,#cfad46,#dcb865,#dbbe7b, #dbbe7b, #dcb865, #cfad46,#b1890f);
+    color: #00296B;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  #title, #description{
+    width: 60vw;
+    max-width: 600px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    background-color:  #dbbe7b;
+  }
+  #title{
+    font-family: Cormoran;
+    font-size: 3em;
+    font-weight: 700;
+    padding-top: 1em;
+    word-spacing: -1px;
+  }
+  #description{
+    font-family: Roboto;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+    background-color: #00296B;
+    
+  }
+
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 600px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color:  #dbbe7b;
+  }
+  
+  fieldset {
+    border: none;
+    display: block;
+    padding: 2rem 0;
+    border-bottom: 3px solid #00509D;
+    margin: 0 0 0 1rem;
+    font-family: Roboto;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  h5{
+    margin: 0 auto 0 10px;
+  }
+  input,
+  textarea,
+  select {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 80%;
+    min-height: 2em;
+    border-radius: 5px;
+  }
+  
+  input, textarea {
+    background-color: #00296B;
+    border: 1px solid #00296B;
+    color: #FFD500;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline; 
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0.5em auto;
+    height: 1em;
+    font-size: 1.1rem;
+    font-family: Cormoran;
+    background-color: #00296B;
+    border-color: #FFf;
+    min-width: 300px;
+  }
+  input[type="submit"]:hover {
+    display: block;
+    background-color:#00509D;
+    border-color: #FFD500;
+    color: #FFD500;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  legend{
+    text-align: center;
+  }
+  
+  #bio{
+    color: #FFD500 ;
+  }
+  
+  
